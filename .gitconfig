@@ -3,3 +3,5 @@
 [user]
 	name = M4DA
 	email = jagielski.adamm@gmail.com
+[pull]
+	rebase = false
