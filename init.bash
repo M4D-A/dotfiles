@@ -15,7 +15,9 @@ sudo apt install -y \
   fzf \
   fuse \
   xclip \
-  openssh-server
+  openssh-server\
+  valgrind\
+  kcachegrind
 
 # PYTHON3
 python3 -m pip install --upgrade pip
