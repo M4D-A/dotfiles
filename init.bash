@@ -17,7 +17,9 @@ sudo apt install -y \
   xclip \
   openssh-server\
   valgrind\
-  kcachegrind
+  kcachegrind\
+  ripgrep\
+  fd-find
 
 # PYTHON3
 python3 -m pip install --upgrade pip
