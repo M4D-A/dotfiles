@@ -8,6 +8,7 @@ sudo apt install -y \
   cmake \
   python3-pip \
   python3-venv \
+  python3-neovim \
   npm \
   luarocks \
   unzip \
@@ -22,8 +23,8 @@ sudo apt install -y \
   fd-find
 
 # PYTHON3
-python3 -m pip install --upgrade pip
-python3 -m pip install virtualenv
+# python3 -m pip install --upgrade pip
+# python3 -m pip install virtualenv
 
 #NODEJS
 sudo npm install -g n
@@ -34,6 +35,7 @@ sudo ln -s /usr/local/bin/node /usr/bin/nodejs
 
 # STOW
 stow --adopt .
+git restore .
 
 # ZOXIDE
 curl -sS https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | bash
@@ -52,7 +54,7 @@ git clone git@github.com:M4D-A/AstroNvimConfig.git ~/.config/nvim
 
 # AstroNVIM optionals
 ## Providers
-python3 -m pip install neovim
+# python3 -m pip install neovim
 sudo npm install -g neovim
 ## Lazygit
 LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | grep -Po '"tag_name": "v\K[^"]*')
