@@ -22,10 +22,6 @@ sudo apt install -y \
   ripgrep\
   fd-find
 
-# PYTHON3
-# python3 -m pip install --upgrade pip
-# python3 -m pip install virtualenv
-
 #NODEJS
 sudo npm install -g n
 sudo n latest
