@@ -20,7 +20,9 @@ sudo apt install -y \
   valgrind\
   kcachegrind\
   ripgrep\
-  fd-find
+  fd-find\
+  gh\
+  htop
 
 #NODEJS
 sudo npm install -g n
