@@ -1,5 +1,5 @@
 # DOTFILES
-### *def:* Files which names start with a .dot
+### *def:* Files whose names start with a .dot
 
 ## Startup
 
