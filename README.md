@@ -2,10 +2,9 @@
 ### *def:* Files which names start with a .dot
 
 ## Startup
-> chmod 700 .ssh/id_ed25519  
-> eval "$(ssh-agent -s)"  
-> ssh-add ~/.ssh/id_ed25519  
-> git clone git@github.com:M4D-A/dotfiles.git  
+> sudo apt install -y gh git
+> gh auth login
+> gh repo clone dotfiles
 > cd dotfiles  
 > sudo bash init.bash  
 
