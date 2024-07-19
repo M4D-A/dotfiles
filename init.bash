@@ -4,6 +4,8 @@ sudo apt upgrade -y
 
 # APT PACKAGES
 sudo apt install -y \
+  curl \
+  wget \
   build-essential \
   cmake \
   python3-pip \
@@ -16,12 +18,12 @@ sudo apt install -y \
   fzf \
   fuse \
   xclip \
-  openssh-server\
-  valgrind\
-  kcachegrind\
-  ripgrep\
-  fd-find\
-  gh\
+  openssh-server \
+  valgrind \
+  kcachegrind \
+  ripgrep \
+  fd-find \
+  gh \
   htop
 
 #NODEJS
