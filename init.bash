@@ -1,5 +1,14 @@
 declare -a packages=(
   "apt"
+  "node"
+
+  "btu"
+  "cloudflared"
+  "gdu"
+  "lazygit"
+  "neovim"
+  "stow"
+  "zoxide"
 )
 
 for name in "${packages[@]}"
