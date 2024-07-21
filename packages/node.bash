@@ -1,4 +1,4 @@
-sudo apt install -y npm
+sudo apt-get install -y npm
 sudo npm install -g n
 sudo n latest
 sudo n prune

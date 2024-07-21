@@ -1,3 +1,3 @@
-sudo apt install -y stow
+sudo apt-get install -y stow
 stow --adopt .
 git restore .
