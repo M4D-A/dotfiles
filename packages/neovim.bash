@@ -8,7 +8,7 @@ rm -rf ~/.config/nvim
 rm -rf ~/.local/share/nvim
 rm -rf ~/.local/state/nvim
 rm -rf ~/.cache/nvim
-git clone git@github.com:M4D-A/AstroNvimConfig.git ~/.config/nvim
+git clone https://github.com/M4D-A/AstroNvimConfig.git ~/.config/nvim
 
 sudo npm install -g neovim
 sudo npm install -g tree-sitter-cli

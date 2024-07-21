@@ -1,6 +1,9 @@
 # USER
 
 init.bash
+packages
+.*\.out
+.*\.err
 
 
 # DEFAULTS
