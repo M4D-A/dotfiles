@@ -1,3 +1,13 @@
+echo "Say the magic word"
+
+#Force passwd check
+sudo -K
+sudo echo ""
+if [ $? != 0 ] ; then 
+  echo "Bad luck"
+  exit 42
+fi
+
 declare -a packages=(
   "apt"
   "node"
@@ -23,5 +33,3 @@ do
     echo "✗ (${OK}), check ${name}[.err|.out] files"
   fi
 done
-
-
