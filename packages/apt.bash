@@ -37,3 +37,5 @@ sudo apt-get install -y \
 # UPDATE / UPGRADE
 sudo apt-get update -y
 sudo apt-get upgrade -y
+
+exit 1
