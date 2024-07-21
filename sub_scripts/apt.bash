@@ -1,23 +1,24 @@
 # UPDATE / UPGRADE
-sudo apt update -y
-sudo apt upgrade -y
+sudo apt-get update -y
+sudo apt-get upgrade -y
 
-# APT BASIC PACKAGES
-sudo apt install -y \
+# APT-GET BASIC PACKAGES
+sudo apt-get install -y \
   curl \
   wget \
   unzip \
   openssh-server \
-  htop\
+  htop \
   fuse \
   fzf \
   xclip \
   ripgrep \
   fd-find \
-  gh 
+  gh \
+  git
 
 # C/C++ tools
-sudo apt install -y \
+sudo apt-get install -y \
   build-essential \
   cmake \
   valgrind \
@@ -25,14 +26,14 @@ sudo apt install -y \
   clang-tidy
 
 # Python3
-sudo apt install -y \
+sudo apt-get install -y \
   python3-pip \
   python3-venv \
   python3-neovim \
 
-sudo apt install -y \
+sudo apt-get install -y \
   luarocks \
 
 # UPDATE / UPGRADE
-sudo apt update -y
-sudo apt upgrade -y
+sudo apt-get update -y
+sudo apt-get upgrade -y
