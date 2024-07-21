@@ -1,6 +1,6 @@
 echo "Say the magic word"
 
-#Force passwd check
+#Force passwd check - so you can cancel the script :V
 sudo -K
 sudo echo ""
 if [ $? != 0 ] ; then 
@@ -15,6 +15,7 @@ declare -a packages=(
   "btu"
   "cloudflared"
   "gdu"
+  "gh"
   "lazygit"
   "neovim"
   "stow"
