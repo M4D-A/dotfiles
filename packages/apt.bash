@@ -5,18 +5,18 @@ sudo apt-get upgrade -y
 # APT-GET BASIC PACKAGES
 sudo apt-get install -y \
   curl \
-  wget \
-  git \
-  unzip \
-  openssh-server \
-  htop \
+  fd-find \
   fuse \
   fzf \
-  xclip \
-  ripgrep \
-  fd-find \
   gh \
-  git
+  git \
+  htop \
+  openssh-server \
+  ripgrep \
+  tmux \
+  unzip \
+  wget \
+  xclip \
 
 # C/C++ tools
 sudo apt-get install -y \

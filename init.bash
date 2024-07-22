@@ -18,8 +18,10 @@ declare -a packages=(
   "gh"
   "lazygit"
   "neovim"
-  "stow"
+  "tmux"
   "zoxide"
+
+  "stow"
 )
 
 for name in "${packages[@]}"
