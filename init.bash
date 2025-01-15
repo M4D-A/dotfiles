@@ -1,6 +1,6 @@
 echo "Say the magic word"
 
-#Force passwd check - so you can cancel the script :V
+# Force passwd check - so you can cancel the script :V
 sudo -K
 sudo echo ""
 if [ $? != 0 ] ; then 
@@ -9,8 +9,8 @@ if [ $? != 0 ] ; then
 fi
 
 declare -a packages=(
-  "apt"
-  "node"
+  "apt_core" # Must be kept first, contains most critical dependencies
+  "node" # Must be kept above all node/npm related packages
 
   "btu"
   "cloudflared"
@@ -21,7 +21,7 @@ declare -a packages=(
   "tmux"
   "zoxide"
 
-  "stow" # must be kept last to link all created config files
+  "stow" # Must be kept last to link all created config files
 )
 
 for name in "${packages[@]}"
@@ -36,3 +36,7 @@ do
     echo "✗ (${STATUS}), check ${name}[.err|.out] files"
   fi
 done
+
+# FINAL UPDATE / UPGRADE (JUST IN CASE)^2
+sudo apt-get update -y
+sudo apt-get upgrade -y

@@ -1,4 +1,4 @@
-# NVIM
+# NVIM - Vim-fork focused on extensibility and usability
 wget https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
 chmod +x nvim.appimage
 sudo mv nvim.appimage /usr/bin/nvim
