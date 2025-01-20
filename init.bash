@@ -20,6 +20,7 @@ declare -a packages=(
   "neovim"
   "tmux"
   "zoxide"
+  "john"
 
   "stow" # Must be kept last to link all created config files
 )
