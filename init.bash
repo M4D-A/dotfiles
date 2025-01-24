@@ -11,19 +11,25 @@ fi
 declare -a packages=(
   "apt_core" # Must be kept first, contains most critical dependencies
   "node" # Must be kept above all node/npm related packages
+  "python"
 
   "btu"
-  "cloudflared"
   "gdu"
   "gh"
   "lazygit"
   "neovim"
   "tmux"
   "zoxide"
-  "john"
-
+ 
   "stow" # Must be kept last to link all created config files
 )
+
+declare -a optional=(
+  "cloudflared"
+  "john"
+)
+
+
 
 for name in "${packages[@]}"
 do
