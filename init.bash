@@ -18,7 +18,6 @@ declare -a packages=(
   "gh"
   "lazygit"
   "neovim"
-  "tmux"
   "zoxide"
  
   "stow" # Must be kept last to link all created config files
