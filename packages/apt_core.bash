@@ -12,7 +12,6 @@ sudo apt-get install -y \
   gh \
   git \
   htop \
-  openssh-server \
   ripgrep \
   tmux \
   unzip \
