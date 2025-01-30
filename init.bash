@@ -21,8 +21,6 @@ declare -a packages=(
   "lua"
   "neovim"
   "zoxide"
-
-  "stow" # Must be kept last to link all created config files
 )
 
 declare -a optional=(
