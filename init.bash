@@ -45,5 +45,9 @@ done
 sudo apt-get update -y
 sudo apt-get upgrade -y
 
+rm ~/.profile
+rm ~/.bashrc
+rm ~/.bash_logout
+
 stow .
 # git restore .
