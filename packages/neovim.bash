@@ -1,7 +1,9 @@
 # NVIM - Vim-fork focused on extensibility and usability
-wget https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
-chmod +x nvim.appimage
-sudo mv nvim.appimage /usr/bin/nvim
+
+wget -O nvim https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
+wget -O nvim https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.appimage
+chmod +x nvim
+sudo mv nvim /usr/bin/nvim
 
 sudo npm install -g neovim
 sudo npm install -g tree-sitter-cli
@@ -14,4 +16,4 @@ rm -rf ~/.cache/nvim
 git clone https://github.com/M4D-A/AstroNvimConfig.git ~/.config/nvim
 
 # Startup NVIM to install plugins
-nvim --headless "+Lazy! sync" +qa
+nvim --headless -c 'quitall'
