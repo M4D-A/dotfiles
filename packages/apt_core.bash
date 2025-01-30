@@ -7,11 +7,11 @@ sudo apt-get install -y \
   build-essential \
   curl \
   fd-find \
-  fuse \
   fzf \
   gh \
   git \
   htop \
+  libfuse2 \
   ripgrep \
   tmux \
   unzip \
