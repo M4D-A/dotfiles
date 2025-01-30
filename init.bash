@@ -45,5 +45,5 @@ done
 sudo apt-get update -y
 sudo apt-get upgrade -y
 
-stow --adopt .
+stow .
 # git restore .
