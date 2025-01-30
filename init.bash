@@ -9,17 +9,19 @@ if [ $? != 0 ] ; then
 fi
 
 declare -a packages=(
-  "apt_core" # Must be kept first, contains most critical dependencies
-  "node" # Must be kept above all node/npm related packages
-  "python"
+  "_apt" # Must be kept first, contains most critical dependencies
+  "_node" # Must be kept above all node/npm related packages
+  "_python"
 
-  "btu"
+  "coding"
+  "cpp"
   "gdu"
   "gh"
   "lazygit"
+  "lua"
   "neovim"
   "zoxide"
- 
+
   "stow" # Must be kept last to link all created config files
 )
 
@@ -27,8 +29,6 @@ declare -a optional=(
   "cloudflared"
   "john"
 )
-
-
 
 for name in "${packages[@]}"
 do
@@ -46,3 +46,6 @@ done
 # FINAL UPDATE / UPGRADE (JUST IN CASE)^2
 sudo apt-get update -y
 sudo apt-get upgrade -y
+
+stow --adopt .
+# git restore .

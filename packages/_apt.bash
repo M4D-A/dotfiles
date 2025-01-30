@@ -5,6 +5,7 @@ sudo apt-get upgrade -y
 # APT-GET BASIC PACKAGES
 sudo apt-get install -y \
   build-essential \
+  btm \
   curl \
   fd-find \
   fzf \
@@ -13,6 +14,7 @@ sudo apt-get install -y \
   htop \
   libfuse2 \
   ripgrep \
+  stow \
   tmux \
   unzip \
   wget \
